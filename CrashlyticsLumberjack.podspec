@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'Framework' do |sp|
   	sp.platform = :ios, '8.0'
-    sp.dependency 'CrashlyticsFramework', '~> 2.2'
+	sp.dependency 'Fabric', '~> 1.2' # required
+	sp.dependency 'Fabric/Crashlytics', '~> 1.2'
   end
 
 end
